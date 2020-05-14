@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Марина Донская](https://up.htmlacademy.ru/htmlcss/28/user/1321015).
-* Наставник: `Неизвестно`.
+* Наставник: [Constantine Cher](https://htmlacademy.ru/profile/id118885)
 
 ---
 
