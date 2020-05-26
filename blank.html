@@ -5,4 +5,17 @@
 		<title>Форма обратной связи</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
-	
+	<body>
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="name">Ваше имя</label>
+				<input type="text" name="name" id="name" placeholder ="Марина"  required></label>
+			</p>
+			<p>
+				<label for="tel">Ваш телефон</label>
+				<input type="tel" name="tel" pattern="+7-000-000-000" required>
+			</p>
+			<textarea name="comment" id="comment-field" rows="3" placeholder="Текст вашего сообщения"></textarea>
+			<button type="submit">Отправить</button>
+		</form>
+	</body>
