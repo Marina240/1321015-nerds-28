@@ -1,4 +1,8 @@
 body {
-	color: green;
-	font-family: cursive;
+	
+	font-family: Roboto, sans-serif;
+}
+
+ul {
+	text-decoration: none;
 }
