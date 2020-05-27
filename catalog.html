@@ -34,9 +34,54 @@
 				</li>
 			</ul>
 			<section>
-				<h2>Фильтр товаров</h2>
-				<!-- Здесь будет форма фильтра -->
-			</section>
+				<h2 class="visualli-hidden">Фильтр товаров</h2>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul>
+							<li>
+								<input type="radio" name="product-group" value="Адаптивная" id="filter-adaptive" checked>
+           			<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li>
+								<input type="radio" name="product-group" value="  Фиксированная" id="filter-fixed">
+								<label for="filter-fixed">  Фиксированная</label>
+							</li>
+						<li>
+							<input type="radio" name="product-group" value="  Резиновая" id="filter-rubber">
+							<label for="filter-rubber">  Резиновая</label>
+						</li>
+						</ul>
+					</fieldset>
+
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="slider" id="slider" checked>
+								<label for="slider">Слайдер</label>
+							</li>
+							<li>
+								<input type="checkbox" name="an-array-of-benefits" id="filter-an-array-of-benefits">
+								<label for="filter-an-array-of-benefits">  Блок преимуществ</label>
+							</li>
+							<li>
+								<input type="checkbox" name="news" id="filter-news"checked >
+						 		<label for="filter-news">  Новости</label>
+				 			</li>
+				 			<li>
+								<input type="checkbox" name="product-gallery" id="filter-gallery">
+					 			<label for="filter-gallery">  Галерея</label>
+			 				</li>
+							<li>
+								<input type="checkbox" name="product-basket" id="filter-basket">
+				 				<label for="filter-basket">  Корзина</label>
+		 					</li>
+						</ul>
+					</fieldset>
+					<button type="submit">Показать</button>
+				</form>
+ 			</section>
 			<!--Список картинок-->
 			<ul>
 				<li>
@@ -93,6 +138,20 @@
 				</ul>
 			</section>
 		</footer>
+
+		<!--Наши контакты-->
+		<section>
+			<h2 class="visualli-hidden">Контактная информация</h2>
+			<p>
+				NЁRDS DESIGN STUDIO<br>
+				191186, Санкт-Петербург,<br>
+				 ул. Б. Конюшенная, д. 19/8  <br>
+ 				  тел. +7 (812) 275-75-75
+			</p>
+			<button class="button">
+				<a href="blank.html">Напишите нам</a>
+			</button>
+		</section>
 
 		<section>
 			<!--Здесь будет карта-->
