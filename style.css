@@ -1,6 +1,6 @@
 /* Variables (варианты цветов)*/
 :root  {
-	--basic-bleck: #000000;
+	--basic-black: #000000;
 	--basic-white: #ffffff;
 	--basic-neutral: #EEEEEE;
 	}
@@ -15,7 +15,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		font-weight: normal;
-		color: #000;
+		color: var(--basic-black);
 	}
 
 	/*Меню*/
@@ -27,12 +27,75 @@
 		font-size: 16px;
 		line-height: 30px;
 		text-transform: uppercase;
-		color: var(--basic-bleck);
+		color: var(--basic-neutral);
 		background-color: var(--basic-neutral);
 	}
 
 	.site-nav  {
 		list-style: none;
 	}
-	
+
+.site-nav-current a:not([href])  {
+	background-color: var(--basic-neutral);
+}
+
+/*Корзина , меню*/
+.site-nav a,
+.main-nav-wrapper a  {
+	color: var(--basic-black);
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.main-nav-wrapper a:hover,
+.main-nav-wrapper a:focus  {
+	color: #FB565A;
+}
+
+/*Предложения студии class="illustration"*/
+.illustration-list  {
+	list-style: none;
+}
+
+.illustration-item,
+.illustration-image,
+.button-illustration {
+	text-align: center;
+}
+
+.illustration-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+/*index-colums*/
+.index-colums  {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.info-list,
+.user-info-list  {
+	list-style: none;
+}|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
