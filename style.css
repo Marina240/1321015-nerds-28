@@ -1,9 +1,38 @@
-body {
-	margin: 0;
-	padding: 0;
+/* Variables (варианты цветов)*/
+:root  {
+	--basic-bleck: #000000;
+	--basic-white: #ffffff;
+	--basic-neutral: #EEEEEE;
+	}
+	
+	/* Global (главные стили)*/
+	body {
+		min-width: 1460px;
+		margin: 0;
+		padding: 0;
+		font-family: Roboto, Arial, sans-serif;
+	
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: normal;
+		color: #000;
+	}
 
-}
-
-ul, a {
+	/*Меню*/
+	a  {
 	text-decoration: none;
-}
+	}
+	
+	.nav  {
+		font-size: 16px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: var(--basic-bleck);
+		background-color: var(--basic-neutral);
+	}
+
+	.site-nav  {
+		list-style: none;
+	}
+	
+
