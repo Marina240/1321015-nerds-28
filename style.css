@@ -1,3 +1,5 @@
+
+/*Главная страница сайта*/
 /* Variables (варианты цветов)*/
 :root  {
 	--basic-black: #000000;
@@ -7,7 +9,7 @@
 	
 	/* Global (главные стили)*/
 	body {
-		min-width: 1460px;
+		min-width: 960px;
 		margin: 0;
 		padding: 0;
 		font-family: Roboto, Arial, sans-serif;
@@ -16,22 +18,66 @@
 		line-height: 24px;
 		font-weight: normal;
 		color: var(--basic-black);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
-	/*Меню*/
 	a  {
 	text-decoration: none;
 	}
 	
+	/*Grid*/
+	html  {
+		height: 100%;
+	}
+
+	.page-body {
+		min-height: 100%;
+		display: grid;
+		grid-template-rows: min-content 1fr min-content;
+		align-content: start;
+	}
+
+	/*Шапка сайта*/
+  .main-header  {
+		background-color: var(--basic-neutral);
+	}
+
+
+	/*меню сайта*/
+	
 	.nav  {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
 		font-size: 16px;
 		line-height: 30px;
 		text-transform: uppercase;
 		color: var(--basic-neutral);
-		background-color: var(--basic-neutral);
+		
+	}
+
+	.logo  {
+		padding-left: 140px;
+		padding-top: 49px;
+	}
+
+	.container  {
+		width: 1440px;
+		margin: 0 auto;
+		padding: 0 8px;
+	}
+
+	.main-nav .container  {
+		display: flex;
+		justify-content: center;
 	}
 
 	.site-nav  {
+		width: 500px;
+		margin: 0;
+		padding: 0;
+		max-height: 30px;
 		list-style: none;
 	}
 
@@ -40,8 +86,16 @@
 }
 
 /*Корзина , меню*/
+.main-nav-cart  {
+	max-width: 75px;
+	
+}
+
+.main-nav-cart .main-basket  {
+	padding-left: 40px;
+}
 .site-nav a,
-.main-nav-wrapper a  {
+.main-nav-cart a  {
 	color: var(--basic-black);
 }
 
@@ -53,19 +107,39 @@
 }
 
 /*Предложения студии class="illustration"*/
+
+
 .illustration-list  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left:140px;
+	padding: 0;
+	max-width: 1100px;
 	list-style: none;
 }
 
-.illustration-item,
-.illustration-image,
-.button-illustration {
-	text-align: center;
+.illustration-item  {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
 }
 
 .illustration-item h3 {
 	font-size: 24px;
 	line-height: 30px;
+}
+.button-item {
+width: 160px;
+height: 50px;
+border-radius: 3px;
+text-align: center;
+text-transform: uppercase;
+font-size: 16px;
+color: #ffffff;
+}
+
+.button:nth-child()  {
+background-color: #FB565A;
 }
 
 /*index-colums*/
@@ -77,7 +151,7 @@
 .info-list,
 .user-info-list  {
 	list-style: none;
-}|
+}
 
 
 

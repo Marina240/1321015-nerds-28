@@ -4,10 +4,11 @@
     <meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+		<link href="normalize.css" rel="stylesheet">
 		<link  href="style.css" rel="stylesheet">
 		
   </head>
-  <body>
+  <body class="page-body">
    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе
 			«<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 <!--header шапка сайта-->
@@ -15,7 +16,7 @@
 			<nav class="nav">
 				<a class="logo">
 					<img src="svg-nerds/svg-nerds/nerds-logo.svg" alt="Логотип nerds" 
-					width="159.87px" height="65.02px">
+					width="160px" height="65px">
 				</a>
 				<div class="main-nav">
 					<div class="container">
@@ -26,15 +27,17 @@
 							<li><a href="info-blank.html">Контакты</a></li>
 						</ul>
 					</div>
-				</div>
-
-					<div class="main-nav-wrapper">
+					<div class="main-nav-cart">
 						<a class="main-basket" href="info-blank.html">Корзина</a>
 					</div>
+				</div>
+
+				
 			</nav>
 		</header>
-		<main class="">
-			<section class="container">
+
+		<main class="page-main">
+			<section class="slider">
 				<h1 class="visualli-hidden">Магазин готовых шаблонов</h1>
 				<p>Долго, дорого, <br> скрупулезно.</p>
 				<p>Математически выверенный дизайн<br>
@@ -46,55 +49,51 @@
 			</section>
 
 			<!--Предложения студии-->
-		<section class="illustration-row">
+		<div class="service-content">
+		<section class="illustration-wrap">
+			
 			<ul class="illustration-list">
-			<!--Наши услуги-->
-				<li class="illustration-image">
+				<li class="illustration-item">
 					<p>
 						<img src="img/illustration-1_1.png" alt="иллюстрация1" width="300px" height="146px">
 					</p>
-				</li>
-				<li  class="illustration-item">
+				
 						<h3>Веб-сайты</h3>
 					<p>
 						Мир никогда не будет прежним<br> после того как увидет ваш сайт.
 					</p>
-				</li>
-				<li class="button-illustration">
-					<button type="button">Заказать</button>
+					<button class="button-item" type="button">Заказать</button>
 				</li>
 
-				<li class="illustration-image">
+				<li class="illustration-item">
 					<p>
 					<img src="img/illustration-2_1.png" alt="иллюстрация2" width="300px" height="146px">
 					</p>
-				</li>
-				<li class="illustration-item">
+			
 					<h3>Приложения</h3>
 					<p>
 						Покорите топ-10 приложений в<br> AppStore и Google Play
 					</p>
-				</li>
-				<li class="button-illustration">
-					<button type="button">Заказать</button>
+			
+					<button class="button-item" type="button">Заказать</button>
 				</li>
 
-				<li class="illustration-image">
+				<li class="illustration-item">
 					<p>
 						<img src="img\illustration-3_1.png" alt="иллюстрация3" width="300px" height="146px">
 					</p>
 
-					<li class="illustration-item">
 					<h3>Презентации</h3>
 					<p>
 						Вы даже не подозреваете,<br>  насколько вы изумительны!
 					</p>
-					</li>
-					<li class="button-illustration">
-					<button type="button">Заказать</button>
+				
+					<button class="button-item" type="button">Заказать</button>
 				</li>
 			</ul>
 		</section>
+		</div>
+
 			<!--О студии-->
 		<div class="index-colums">
 			<section class="info">
@@ -116,6 +115,7 @@
 							<p>Слайдшоу и видео для корпоративных презентаци</p>
 						</li>
 				</ul>
+			</div>
 			</section>
 			<section class="user-info">
 				<ul class="user-info-list">
