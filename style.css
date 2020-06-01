@@ -138,7 +138,7 @@ font-size: 16px;
 color: #ffffff;
 }
 
-.button:nth-child()  {
+.button:nth-child(1)  {
 background-color: #FB565A;
 }
 
