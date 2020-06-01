@@ -9,7 +9,7 @@
 	
 	/* Global (главные стили)*/
 	body {
-		min-width: 960px;
+		min-width: 1460px;
 		margin: 0;
 		padding: 0;
 		font-family: Roboto, Arial, sans-serif;
@@ -18,7 +18,8 @@
 		line-height: 24px;
 		font-weight: normal;
 		color: var(--basic-black);
-		background-position: center;
+		background-image: url("svg-nerds");
+		background-position: left center;
 		background-repeat: no-repeat;
 	}
 
@@ -154,8 +155,15 @@ background-color: #FB565A;
 }
 
 
+/*Footer*/
+.main-footer  {
+	
+	background-image: url("img/Shape.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat ;
 
 
+}
 
 
 
