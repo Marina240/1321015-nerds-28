@@ -1,0 +1,137 @@
+:root {
+	--basic-black: #000000;
+	--basic-white: #ffffff;
+	--basic-neutral: #eeeeee;
+}
+
+/* Global (главные стили)*/
+body {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, sans-serif;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: var(--basic-black);
+	background-image: url("svg-nerds");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+/*Убрала стили у списков и ссылок*/
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	opacity: 0;
+}
+
+/*Шапка каталога*/
+.main-header {
+	background-color: var(--basic-neutral);
+	margin-bottom: 110px;
+}
+
+/*Навигация каталога*/
+.site-nav {
+	width: 100%;
+	margin-bottom: 65px;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-neutral);
+	margin-bottom: 80px;
+}
+
+/*Логотип*/
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+	padding-left: 140px;
+	padding-top: 47px;
+}
+
+/*Контейнер меню*/
+.container {
+width: 1160px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+.site-nav .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	width: 440px;
+	margin: 0;
+	padding: 0;
+	min-height: 32px;
+}
+
+.site-nav-current {
+	position: relative;
+}
+/*Корзина*/
+.basket {
+	min-width: 110px;
+} 
+
+.basket {
+	margin-left: auto;
+}
+
+.basket .login-cart {
+	padding-left: 25px;
+}
+
+/*Делаем ссылки блочными*/
+.site-nav a,
+.basket a {
+	color: var(--basic-black);
+	display: block;
+	padding: 20px 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
