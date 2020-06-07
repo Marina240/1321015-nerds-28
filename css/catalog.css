@@ -6,7 +6,7 @@
 
 /* Global (главные стили)*/
 body {
-	min-width: 1440px;
+	max-width: 1440px;
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, Arial, sans-serif;
@@ -19,6 +19,7 @@ body {
 	background-position: left center;
 	background-repeat: no-repeat;
 }
+
 /*Убрала стили у списков и ссылок*/
 ul {
 	list-style: none;
@@ -34,6 +35,9 @@ a {
 
 /*Шапка каталога*/
 .main-header {
+	height: 355px;
+	padding: 0;
+	margin: 0;
 	background-color: var(--basic-neutral);
 	margin-bottom: 110px;
 }
@@ -44,7 +48,7 @@ a {
 	margin-bottom: 65px;
 }
 
-.catalog {
+.site-nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -60,44 +64,33 @@ a {
 	width: 160px;
 	height: 65px;
 	padding-left: 140px;
-	padding-top: 47px;
+	margin-top: 47px;
 }
 
 /*Контейнер меню*/
-.container {
-width: 1160px;
-margin: 0 auto;
-padding: 0 10px;
-}
-
-.site-nav .container {
-	display: flex;
-	justify-content: space-between;
-}
 
 .site-nav {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 440px;
 	margin: 0;
 	padding: 0;
 	min-height: 32px;
 }
 
-.site-nav-current {
+.site-nav {
 	position: relative;
 }
 /*Корзина*/
 .basket {
 	min-width: 110px;
-} 
-
-.basket {
-	margin-left: auto;
+	margin-right: 140px;
 }
 
 .basket .login-cart {
 	padding-left: 25px;
+	color: var(--basic-black);
 }
 
 /*Делаем ссылки блочными*/
@@ -108,15 +101,185 @@ padding: 0 10px;
 	padding: 20px 25px;
 }
 
+.submenu {
+	padding: 0;	
+	margin: 0;
+	list-style: none;
+	}
+	
+	.submenu {
+		grid-column: 1 / -1;
+		margin-bottom: 40px;
+	}
+	/*Фильтр*/
+	.features-filter {
+		margin-left:140px ;
+		
+	}
+
+/*Стилизация диапозона*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+	border: none;
+	margin-bottom: 54px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-neutral);
+  border-radius: 5px;
+}
 
 
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
 
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
 
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
 
+.range-controls .toggle-min {
+  left: 18px;
+}
 
+.range-controls .toggle-max {
+  left: 160px;
+}
 
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
 
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
 
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*Форма с радиобаттоном*/
+.item-radio {
+	padding: 0;
+	margin: 0;
+	border: none;
+	margin-bottom: 45px;
+	width: 260px;
+}
+
+.item-radio legend {
+	font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+}
+.item-radio li {
+	font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #283136;
+}
+
+/*Форма с чекбоксом*/
+.item-chekbox {
+	padding: 0;
+	margin: 0;
+	border: none;
+	margin-bottom: 50px;
+	width: 260px;
+}
+
+.item-chekbox legend {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.item-chekbox li {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #283136;
+}
+
+/*oбщие стили каталога*/
+.padge-catalog {
+	display: grid;
+  grid-template-columns: 280px 1fr;
+	align-content: start;
+	min-width: 1440px;
+}
+
+/*Каталог*/
+.catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 55px;
+	margin-left: 140px;
+}
+
+.catalog-item {
+	margin-right: 40px;
+	margin-bottom: 70px;
+	background-color: #c4c4c4;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+	
 
 
 
