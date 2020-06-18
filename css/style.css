@@ -17,16 +17,25 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	color: var(--basic-black);
-	background-image: url("svg-nerds");
-	background-position: left center;
-	background-repeat: no-repeat;
+
 }
 
 a {
 	text-decoration: none;
 }
-.visually-hidden {
-	visibility: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Grid*/
@@ -48,40 +57,43 @@ html {
 
 /*меню сайта*/
 .nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+
 	font-size: 16px;
 	line-height: 30px;
 	text-transform: uppercase;
-	color: var(--basic-neutral);
-	margin-bottom: 80px;
+	color: var(--basic-black);
+	
 }
 
 .logo {
 	padding-left: 140px;
 	padding-top: 49px;
+	padding-right: 200px;
 }
 
-/*Container*/
+/*Контейнер меню*/
 .container {
-	width: 1205px;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0 10px;
-}
-
-.main-nav .container {
 	display: flex;
 	justify-content: space-between;
 }
-
-/*Навигация сайта*/
-.site-nav {
-	width: 440px;
+ 
+ul, li {
 	margin: 0;
 	padding: 0;
-	max-height: 30px;
 	list-style: none;
+}
+/*Навигация сайта*/
+.site-nav li {
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+	width: 440px;
+	margin-right: 44px;
+	padding: 0;
+	max-height: 30px;
+	
 }
 
 .site-nav-current a:not([href]) {
@@ -112,10 +124,77 @@ html {
 	opacity: 0.3;
 }
 
-/*Slider*/
+/*Слайдер*/
 .slider {
-	display: none;
+	position: relative;
+	
+	text-align: left;
+	color: var(--basic-black);
+	background-color: var(--basic-neutral);
+	
 }
+
+.slider {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 80px;
+}
+
+.slider-list {
+	padding-left: 140px;
+}
+
+.slider-item .slogan  {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: #000;
+	margin-bottom: 37px;
+}
+
+.slider-item .desc {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	margin-bottom: 26px;
+}
+
+.button {
+	display: inlin-block;
+	padding: 16px 54px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	vertical-align: top;
+	text-decoration: none;
+	background: #fb565a;
+	
+	border-radius: 3px;
+	box-shadow: inherit 0 3px 0;
+	border: none;
+	cursor: pointer;
+
+}
+
+.button:hover,
+.button:focus {
+	background: #e74246;
+}
+
+.button:active {
+	background: #d7373b;
+	box-shadow: rgba(0, 1, 1, 0.1);
+	opacity: 0.3;
+}
+
+
 
 /*Предложения студии class="illustration"*/
 
