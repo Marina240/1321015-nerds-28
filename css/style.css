@@ -145,6 +145,14 @@ ul, li {
 	padding-left: 140px;
 }
 
+.slide {
+	display: none;
+}
+
+.slide-current {
+	display: block;
+}
+
 .slider-item .slogan  {
 	font-style: normal;
 	font-weight: 500;
@@ -194,8 +202,33 @@ ul, li {
 	opacity: 0.3;
 }
 
+.pic {
+	position: absolute;
+	left: 537px;
+	top: 114px;
+}
+.slider-controls {
+	position: absolute;
+	bottom: 96px;
+	left: 711px;
+	display: flex;
+	width: 88px;
+	justify-content: space-between;
+}
 
+.slider-controls button {
+	padding: 0;
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
 
+.slider-controls .current {
+	background-color: #fff;
+}
 /*Предложения студии class="illustration"*/
 
 .illustration-list {
@@ -379,23 +412,43 @@ ul, li {
 	line-height: 18px;
 }
 
+/*Секция с логотипами*/
+
+.logo-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	padding-left: 179px;
+	width: 1071px;
+}
 /*Footer*/
 
 .main-footer {
 	min-width: 1100px;
-	background-color: #eeeeee;
+	
 }
 
 .main-footer ul {
 	list-style: none;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
-	background: linear-gradient(0deg, #e74246, #e74246), #ffffff;
+.social-button {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 81px;
+height: 81px;
+border-radius: 50%;
+background: var(--basic-neutral);
 }
 
-.footer-social a:active {
+.social-button :hover,
+.social-button :focus {
+	background:  #e74246;
+}
+
+.social-button :active {
 	background: linear-gradient(0deg, #d7373b, #d7373b), #ffffff;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
